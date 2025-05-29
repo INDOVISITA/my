@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Indovisita - Products</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; }
+    header { background:#4CAF50; color:#fff; padding:15px 20px; }
+    nav a { color:#fff; margin: 0 10px; text-decoration:none; font-weight:bold; }
+    nav a:hover { text-decoration: underline; }
+    main { padding: 20px; max-width: 900px; margin: auto; }
+    footer { background:#333; color:#ccc; text-align:center; padding:15px; margin-top: 40px; }
+    h1,h2 { margin-top: 0; }
+    .product-list { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .product-card {
+      background: #fff; border: 1px solid #ddd; border-radius: 6px; width: 280px; padding: 15px;
+      box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .product-card img { max-width: 100%; border-radius: 6px; }
+    .product-info { text-align: center; margin-top: 10px; }
+    .product-info h3 { margin-bottom: 8px; }
+    .price { font-weight: bold; margin: 10px 0; font-size: 1.2em; color: #4CAF50; }
+    .upi-button {
+      display: inline-block; background:#4CAF50; color:#fff; padding:10px 20px; border-radius:5px;
+      text-decoration:none; margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .upi-button:hover { background:#388E3C; }
+    .qr-code { margin-top: 10px; border: 1px solid #ccc; border-radius: 5px; width: 150px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Indovisita</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Products</h2>
+    <div class="product-list">
+      
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/280x180?text=Wireless+Headphones" alt="Wireless Headphones" />
+        <div class="product-info">
+          <h3>Wireless Headphones</h3>
+          <p>High-quality sound with noise cancellation and long battery life.</p>
+          <div class="price">₹2,499</div>
+          <a href="upi://pay?pa=ishan15@fam&pn=Indovisita&am=2499&cu=INR&tn=Payment+for+Wireless+Headphones" class="upi-button">
+            Pay ₹2,499 via UPI
+          </a>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=ishan15@fam&pn=Indovisita&am=2499&cu=INR&tn=Payment+for+Wireless+Headphones&size=150x150" alt="UPI QR Code" class="qr-code" />
+        </div>
+      </div>
+      
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/280x180?text=Smart+Fitness+Band" alt="Smart Fitness Band" />
+        <div class="product-info">
+          <h3>Smart Fitness Band</h3>
+          <p>Track your health and fitness goals with real-time stats.</p>
+          <div class="price">₹1,299</div>
+          <a href="upi://pay?pa=ishan15@fam&pn=Indovisita&am=1299&cu=INR&tn=Payment+for+Smart+Fitness+Band" class="upi-button">
+            Pay ₹1,299 via UPI
+          </a>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=ishan15@fam&pn=Indovisita&am=1299&cu=INR&tn=Payment+for+Smart+Fitness+Band&size=150x150" alt="UPI QR Code" class="qr-code" />
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/280x180?text=Portable+Bluetooth+Speaker" alt="Portable Bluetooth Speaker" />
+        <div class="product-info">
+          <h3>Portable Bluetooth Speaker</h3>
+          <p>Compact design with powerful sound and easy connectivity.</p>
+          <div class="price">₹1,899</div>
+          <a href="upi://pay?pa=ishan15@fam&pn=Indovisita&am=1899&cu=INR&tn=Payment+for+Portable+Bluetooth+Speaker" class="upi-button">
+            Pay ₹1,899 via UPI
+          </a>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=ishan15@fam&pn=Indovisita&am=1899&cu=INR&tn=Payment+for+Portable+Bluetooth+Speaker&size=150x150" alt="UPI QR Code" class="qr-code" />
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>&copy; 2025 Indovisita. All rights reserved.</footer>
+</body>
+</html>
